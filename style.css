@@ -459,7 +459,6 @@ nav {
   height: 600px;
   width: 400px;
   margin: 20px;
-  margin-top: 50px;
   pointer-events: none;
 }
 
@@ -481,4 +480,37 @@ nav {
   height: 400px;
   object-fit: cover;
   margin-top: 20px;
+}
+
+/* What We Offer */
+
+.whatWeOffer {
+  display: flex;
+  background-color: #444;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+
+.WWO-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.WWO-content h2 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.WWO-content h1 {
+  margin-top: 5px;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
