@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* Navbar */
+
+nav {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  padding-right: 100px;
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 0.5px 10px black;
+  overflow: visible;
+}
+.background {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 120px;
+  backdrop-filter: blur(12px);
+  z-index: -2;
+}
+
+/* NavLogo */
+
+.navLogo img {
+  width: 200px;
+  position: relative;
+}
+
+/* NavLinks */
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.link {
+  position: relative;
+}
+
+.link .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  bottom: 0;
+  left: 5px;
+  background-color: white;
+  border-radius: 45px;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 90%;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.subLinksPages {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  background-color: #444;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.subLinksPages li {
+  width: 100%;
+}
+
+.subLinksPages li a {
+  padding: 10px 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.subLinksPages li a:hover {
+  background-color: #666;
+}
+
+.link:hover .subLinksPages {
+  display: block;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.hamburger .line {
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger .line .top {
+  width: 100%;
+}
+
+.hamburger .line .middle {
+  width: 70%;
+  align-self: center;
+}
+
+.hamburger .line .bottom {
+  width: 100%;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  transition: right 0.5s ease;
+  z-index: 1;
+}
+
+.hamburger.open {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+/* SidebarHamburger */
+
+.sidebarHamburger.open {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.sidebarHamburger.open .top {
+  height: 3px;
+  width: 30px;
+  transform: rotate(48deg);
+  transform-origin: top left;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.sidebarHamburger.open .middle {
+  opacity: 0;
+}
+.sidebarHamburger.open .bottom {
+  height: 3px;
+  width: 30px;
+  transform: rotate(-48deg);
+  transform-origin: bottom left;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Content */
+
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.sidebarLogo img {
+  width: 150px;
+  position: relative;
+}
+.sidebarLogo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.sidebarSocialLinks {
+  display: flex;
+  justify-content: first baseline;
+  color: white;
+}
+.sidebarSocialLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-size: 25px;
+}
+.sidebarSocialLinks ul li a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+.sidebarSocialLinks ul li span {
+  align-content: end;
+}
+.sidebarSocialLinks ul li span:hover {
+  color: #666;
+}
+.sidebarSocialLinks .link img {
+  width: 30px;
+}
+
+.sidebarSocialLinks .link:hover {
+  cursor: pointer;
+}
+
+.sidebar .line {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  margin: 0 10%;
+  height: 1px;
+  background-color: white;
+  width: 80%;
+}
+
+.sidebarContactInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 10%;
+  justify-content: first baseline;
+  color: white;
+  line-height: 0px;
+}
+
+.sidebarContactInfo h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.sidebarContactInfo h4 a {
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero */
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: fit-content;
+  margin: 50px;
+  color: white;
+  text-shadow: 0px 2px 10px black;
+  opacity: 85%;
+}
+
+.heroHeading {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.heroArtora {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+}
+.heroArtora h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.heroArtora h1 span {
+  font-weight: 200;
+}
+.heroArtora h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.text-rotate {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  height: 65px;
+  line-height: 60px;
+  position: relative;
+  margin-top: 0;
+}
+
+.text-rotate span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: rotate 6s infinite;
+}
+
+.text-rotate span:nth-child(1) {
+  animation-delay: 0s;
+}
+.text-rotate span:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.text-rotate span:nth-child(3) {
+  animation-delay: 3s;
+}
+.text-rotate span:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Who We Are */
+
+.whoWeAre {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 672px;
+  padding: 50px;
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+}
+
+.WWA-content {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.WWA {
+  font-weight: 300;
+}
+
+.WWA-slider {
+  display: flex;
+  width: 70%;
+}
+
+/*  */
+
+.items {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow-x: visible;
+  overflow-y: hidden;
+  white-space: nowrap;
+  cursor: url("Icons/icons8-swipe-48.png"), auto;
+  user-select: none;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.items::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.items.active {
+  cursor: url("Icons/icons8-swipe-48.png");
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 400px;
+  margin: 20px;
+  margin-top: 50px;
+  pointer-events: none;
+}
+
+.item h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.item h4 {
+  text-wrap: wrap;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.item img {
+  height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+}
