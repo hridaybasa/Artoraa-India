@@ -155,7 +155,7 @@ nav {
   width: 250px;
   height: 100%;
   background-color: black;
-  transition: right 0.5s ease;
+  transition: all 0.5s ease;
   z-index: 1;
 }
 
@@ -292,14 +292,15 @@ nav {
 /* Hero */
 
 .heroVideo {
+  display: flex;
+  padding-bottom: 500px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   z-index: -999;
   background-color: black;
-  margin-bottom: 0;
 }
 
 .video {
@@ -314,8 +315,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
   height: fit-content;
-  margin: 50px;
+  margin-top: 80px;
   color: white;
   text-shadow: 0px 2px 10px black;
   opacity: 85%;
@@ -411,7 +413,7 @@ nav {
   padding: 50px;
   background-color: black;
   color: white;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .WWA-content {
@@ -459,7 +461,6 @@ nav {
   height: 600px;
   width: 400px;
   margin: 20px;
-  pointer-events: none;
 }
 
 .item h1 {
@@ -480,6 +481,30 @@ nav {
   height: 400px;
   object-fit: cover;
   margin-top: 20px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  transform-origin: center center;
+}
+
+.item img:hover {
+  transform: scale(1.05) rotate(1deg); /* Scale up and rotate the image slightly */
+  filter: brightness(70%) sepia(20%) hue-rotate(5deg); /* Dim the image and add color effects */
+}
+
+.item img:hover::before {
+  opacity: 1; /* Fade in the overlay on hover */
+}
+
+.item h1,
+.item h4 {
+  position: relative;
+  z-index: 2; /* Ensure text stays above the overlay */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.item:hover h1,
+.item:hover h4 {
+  transform: translateY(-10px); /* Move the text slightly upwards */
+  opacity: 0.8; /* Slightly fade the text on hover */
 }
 
 /* What We Offer */
@@ -513,4 +538,107 @@ nav {
   margin-top: 5px;
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+/* Our Events */
+
+.ourEvents {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 672px;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+.ourEvents-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 40px;
+  text-align: center;
+  width: 30%;
+}
+
+.OE {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.OE-des {
+  font-weight: 200;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.OE-slider {
+  display: flex;
+  width: 70%;
+  overflow: scroll;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.line {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.OE-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+}
+
+.OE-item {
+  display: flex;
+  height: fit-content;
+  gap: 20px;
+}
+
+.OE-item-image img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.OE-item-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 0;
+  padding-right: 80px;
+}
+.OE-item-content h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.OE-item-content h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+.OE-item-content button {
+  margin-top: 0;
+  width: 100px;
+  height: 30px;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+}
+.OE-item-content button:hover {
+  background-color: #666;
+  color: white;
+}
+.price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
