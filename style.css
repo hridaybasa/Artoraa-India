@@ -580,6 +580,11 @@ nav {
   padding-left: 40px;
   padding-top: 40px;
   padding-right: 40px;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+.OE-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 .line {
