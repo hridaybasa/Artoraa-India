@@ -42,6 +42,7 @@ nav {
 .navLogo img {
   width: 200px;
   position: relative;
+  object-fit: cover;
 }
 
 /* NavLinks */
@@ -156,7 +157,7 @@ nav {
   height: 100%;
   background-color: black;
   transition: all 0.5s ease;
-  z-index: 1;
+  z-index: 10;
 }
 
 .hamburger.open {
@@ -600,6 +601,9 @@ nav {
   gap: 20px;
   height: fit-content;
 }
+.OE-items::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
 
 .OE-item {
   display: flex;
@@ -646,4 +650,39 @@ nav {
   display: flex;
   justify-content: start;
   align-items: center;
+}
+
+/* Newsletter */
+
+.newsletter {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  background-color: #444;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #666;
+  padding: 0px;
+}
+
+.newsletter-content h1 {
+  font-size: 3rem;
+}
+
+.newsletter-content .form label {
+  font-size: 1rem;
+}
+
+.newsletter-content .form input {
+  background-color: #444;
+  opacity: 80%;
+  border-style: none;
 }
