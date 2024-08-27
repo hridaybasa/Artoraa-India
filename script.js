@@ -157,6 +157,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const form = new FormData(e.target);
       const responseDiv = document.getElementById("response");
 
+      // Phone number validation
+      const phoneInput = document.getElementById("phone").value;
+      const phoneRegex = /^\d{10}$/; // Simple regex for 10-digit phone numbers
+
+      if (!phoneRegex.test(phoneInput)) {
+        responseDiv.innerHTML = "Please enter a valid 10-digit phone number.";
+        return; // Stop form submission if the phone number is invalid
+      }
+
       // Extracting checkbox values manually
       const types = [];
       document

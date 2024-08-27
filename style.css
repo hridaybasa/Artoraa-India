@@ -512,7 +512,7 @@ nav {
 
 .whatWeOffer {
   display: flex;
-  background-color: #444;
+  background-color: black;
   width: 100%;
   justify-content: center;
   color: white;
@@ -657,24 +657,37 @@ nav {
 .newsletter {
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 400px;
   justify-content: center;
-  background-color: #444;
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .newsletter-content {
   display: flex;
-  flex-direction: column;
   width: 80%;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  background-color: #666;
+  gap: 100px;
   padding: 0px;
 }
-
-.newsletter-content h1 {
+.newsletter-info {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-content .newsletter-info h1 {
   font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+.newsletter-content .newsletter-info h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
 }
 
 .newsletter-content .form label {
@@ -682,7 +695,162 @@ nav {
 }
 
 .newsletter-content .form input {
-  background-color: #444;
-  opacity: 80%;
+  height: 30px;
+  padding-left: 5px;
+  color: white;
+  box-sizing: border-box;
+  border: none; /* Removes all borders */
+  border-bottom: 3px solid white; /* Adds a solid border only at the bottom */
+  background-color: transparent; /* Sets the background to transparent */
+}
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#newsletter-form ::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+#response {
+  margin-top: 20px;
+  color: white;
+}
+/* Main container styling */
+
+/* Main container styling */
+/* Main container styling */
+.select2-container {
+  width: 80px !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  box-sizing: border-box;
+  border: none; /* Removes all borders */
+  border-bottom: 1px solid #000; /* Adds a solid border only at the bottom */
+  background-color: transparent !important; /* Makes the background transparent */
+}
+
+.select2-container::placeholder {
+  color: white !important;
+}
+
+/* Styling the visible part of the dropdown */
+.select2-selection {
+  background-color: transparent !important; /* Makes background transparent */
+  border: none !important; /* Removes all borders */
+  border-bottom: 3px solid white !important; /* Adds a solid border only at the bottom */
+  border-radius: 0px !important; /* Removes border radius */
+  height: 30px !important; /* Sets height */
+  padding: 0px !important; /* Adjusts padding for better alignment */
+  font-size: 14px !important; /* Sets font size */
+  color: white !important; /* Sets text color to black for better visibility */
+  box-sizing: border-box; /* Ensures proper sizing */
+  display: flex; /* Aligns content properly */
+  align-items: center; /* Vertically centers content */
+}
+
+/* Styling the selected option text */
+.select2-selection__rendered {
+  color: white !important; /* Sets text color to black */
+  padding-left: 0px !important; /* Adds padding to the left */
+}
+.select2-selection__rendered .select2-selection__placeholder {
+  color: white !important; /* Placeholder color */
+  opacity: 0.8 !important; /* Ensures the color shows properly */
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+/* Styling the dropdown clear (cross) icon */
+.select2-selection__clear {
+  color: white !important; /* Sets color for the clear (cross) icon */
+  cursor: pointer; /* Changes cursor to pointer for better UX */
+  margin-right: 5px; /* Adds right margin to separate from the text */
+}
+
+/* Styling the dropdown arrow */
+.select2-selection__arrow {
+  right: 5px !important; /* Adjusts right padding for arrow */
+}
+
+/* Dropdown list container */
+.select2-results__options {
+  background-color: #ffffff; /* White background for dropdown list */
+  border: 1px solid #ddd; /* Light grey border around dropdown list */
+  border-radius: 4px; /* Rounded corners for dropdown list */
+  max-height: 200px; /* Max height to enable scrolling */
+  overflow-y: auto; /* Enable vertical scroll */
+}
+
+/* Individual dropdown options */
+.select2-results__option {
+  padding: 10px; /* Internal padding */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+}
+
+/* Highlight styling for options */
+.select2-results__option--highlighted {
+  background-color: #e6e6e6; /* Background color on hover */
+  color: #000; /* Text color on hover */
+}
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.name-email input {
+  width: 300px;
+  align-items: flex-start;
+}
+
+.phone {
+  display: flex;
+}
+.phone input {
+  width: 220px;
+  height: 30px !important;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.checkbox label {
+  color: white;
+}
+
+.privacy-checkbox {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.privacy-checkbox label {
+  font-weight: 300;
+  font-size: 10px;
+  margin-left: 10px;
+}
+.privacy-checkbox label a {
+  color: white;
+}
+.privacy-checkbox button {
+  width: 40px;
+  height: 40px;
+  border-radius: 45px;
   border-style: none;
+  margin-left: 30px;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #666;
+  color: white;
+}
+.privacy-checkbox button:hover {
+  background-color: white;
+  color: #000;
 }
