@@ -282,6 +282,10 @@ nav {
   font-weight: 500;
   letter-spacing: 1px;
 }
+.sidebarContactInfo h2 a {
+  text-decoration: none;
+  color: white;
+}
 
 .sidebarContactInfo h4 a {
   font-weight: 200;
@@ -340,6 +344,8 @@ nav {
   font-size: 5rem;
   font-weight: 500;
   letter-spacing: 3px;
+  text-align: center;
+  align-items: center;
 }
 .heroArtora h1 span {
   font-weight: 200;
@@ -602,7 +608,7 @@ nav {
   height: fit-content;
 }
 .OE-items::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  display: none;
 }
 
 .OE-item {
@@ -662,6 +668,7 @@ nav {
   background-color: black;
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .newsletter-content {
@@ -671,6 +678,7 @@ nav {
   align-items: center;
   gap: 100px;
   padding: 0px;
+  margin-top: 50px;
 }
 .newsletter-info {
   display: flex;
@@ -686,6 +694,7 @@ nav {
 .newsletter-content .newsletter-info h4 {
   font-size: 1rem;
   font-weight: 300;
+  line-height: 20px;
   text-align: center;
   color: white;
 }
@@ -699,15 +708,15 @@ nav {
   padding-left: 5px;
   color: white;
   box-sizing: border-box;
-  border: none; /* Removes all borders */
-  border-bottom: 3px solid white; /* Adds a solid border only at the bottom */
-  background-color: transparent; /* Sets the background to transparent */
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
 }
 
 #newsletter-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 #newsletter-form ::-webkit-input-placeholder {
   font-family: "Josefin Sans", sans-serif;
@@ -717,9 +726,7 @@ nav {
   margin-top: 20px;
   color: white;
 }
-/* Main container styling */
 
-/* Main container styling */
 /* Main container styling */
 .select2-container {
   width: 80px !important;
@@ -727,9 +734,9 @@ nav {
   margin-left: 0 !important;
   margin-top: 0 !important;
   box-sizing: border-box;
-  border: none; /* Removes all borders */
-  border-bottom: 1px solid #000; /* Adds a solid border only at the bottom */
-  background-color: transparent !important; /* Makes the background transparent */
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent !important;
 }
 
 .select2-container::placeholder {
@@ -738,63 +745,63 @@ nav {
 
 /* Styling the visible part of the dropdown */
 .select2-selection {
-  background-color: transparent !important; /* Makes background transparent */
-  border: none !important; /* Removes all borders */
-  border-bottom: 3px solid white !important; /* Adds a solid border only at the bottom */
-  border-radius: 0px !important; /* Removes border radius */
-  height: 30px !important; /* Sets height */
-  padding: 0px !important; /* Adjusts padding for better alignment */
-  font-size: 14px !important; /* Sets font size */
-  color: white !important; /* Sets text color to black for better visibility */
-  box-sizing: border-box; /* Ensures proper sizing */
-  display: flex; /* Aligns content properly */
-  align-items: center; /* Vertically centers content */
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 3px solid white !important;
+  border-radius: 0px !important;
+  height: 30px !important;
+  padding: 0px !important;
+  font-size: 14px !important;
+  color: white !important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 /* Styling the selected option text */
 .select2-selection__rendered {
-  color: white !important; /* Sets text color to black */
-  padding-left: 0px !important; /* Adds padding to the left */
+  color: white !important;
+  padding-left: 0px !important;
 }
 .select2-selection__rendered .select2-selection__placeholder {
-  color: white !important; /* Placeholder color */
-  opacity: 0.8 !important; /* Ensures the color shows properly */
+  color: white !important;
+  opacity: 0.8 !important;
   padding-left: 5px;
   font-size: 14px;
 }
 
 /* Styling the dropdown clear (cross) icon */
 .select2-selection__clear {
-  color: white !important; /* Sets color for the clear (cross) icon */
-  cursor: pointer; /* Changes cursor to pointer for better UX */
-  margin-right: 5px; /* Adds right margin to separate from the text */
+  color: white !important;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 /* Styling the dropdown arrow */
 .select2-selection__arrow {
-  right: 5px !important; /* Adjusts right padding for arrow */
+  right: 5px !important;
 }
 
 /* Dropdown list container */
 .select2-results__options {
-  background-color: #ffffff; /* White background for dropdown list */
-  border: 1px solid #ddd; /* Light grey border around dropdown list */
-  border-radius: 4px; /* Rounded corners for dropdown list */
-  max-height: 200px; /* Max height to enable scrolling */
-  overflow-y: auto; /* Enable vertical scroll */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 /* Individual dropdown options */
 .select2-results__option {
-  padding: 10px; /* Internal padding */
-  font-size: 16px; /* Font size */
-  color: #333; /* Text color */
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
 }
 
 /* Highlight styling for options */
 .select2-results__option--highlighted {
-  background-color: #e6e6e6; /* Background color on hover */
-  color: #000; /* Text color on hover */
+  background-color: #e6e6e6;
+  color: #000;
 }
 
 .name-email {
@@ -853,4 +860,97 @@ nav {
 .privacy-checkbox button:hover {
   background-color: white;
   color: #000;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: black;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+footer .line {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.upper-footer {
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+}
+.footer-logo img {
+  width: 300px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 100px;
+  color: white;
+}
+.footer-content .address {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content .address h5 {
+  line-height: 16px;
+}
+.footer-content h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.footer-content h5 {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.footer-content h5 a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+.footer-social ul {
+  display: flex;
+  gap: 60px;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.footer-social .link img {
+  width: 30px;
+}
+.footer-social .link img:hover {
+  cursor: pointer;
+  background-color: #444;
+}
+
+.lower-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.copyright {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
