@@ -109,6 +109,34 @@
     margin-top: 0;
     margin-right: auto;
   }
+
+  .whoWeAre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .WWA-content {
+    padding-top: 0px;
+    width: 50%;
+  }
+  .WWA {
+    font-size: 16px;
+  }
+  .WWA-slider {
+    width: 100%;
+  }
+  .item {
+    height: 500px;
+  }
+  .item h1 {
+    font-size: 2.5rem;
+  }
+  .item h4 {
+    font-size: 14px;
+  }
+  .item img {
+    height: 400px;
+  }
 }
 
 @media (max-width: 650px) and (min-width: 500px) {
@@ -185,6 +213,31 @@
   .heroArtora h2 {
     font-size: 1.1rem;
   }
+
+  .whoWeAre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .WWA-content {
+    padding-top: 0px;
+    width: 50%;
+  }
+  .WWA {
+    font-size: 18px;
+  }
+  .WWA-slider {
+    width: 100%;
+  }
+  .item {
+    height: 600px;
+  }
+  .item h1 {
+    font-size: 2.5rem;
+  }
+  .item h4 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 650px) {
@@ -260,6 +313,22 @@
   }
   .heroArtora h2 {
     font-size: 1.3rem;
+  }
+
+  .whoWeAre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .WWA-content {
+    padding-top: 0px;
+    width: 50%;
+  }
+  .WWA {
+    font-size: 20px;
+  }
+  .WWA-slider {
+    width: 100%;
   }
 }
 
