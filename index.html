@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="index-responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,13 +67,89 @@
           <div class="line bottom"></div>
         </div>
         <div class="sidebarContent">
+          <div class="navLinks">
+            <div class="sidebarLogo">
+              <img src="Images/new logo white.png" />
+            </div>
+            <ul class="nav-links">
+              <li class="link">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="link">
+                <a href="collection.html" class="nav-link">Collection</a>
+              </li>
+              <li class="link">
+                <a href="#" class="nav-link">Pages</a>
+                <ul class="subLinksPages">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="our-team.html">Our Team</a></li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </li>
+              <li class="link">
+                <a href="community.html" class="nav-link">Community</a>
+              </li>
+              <li class="link">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="sidebarSocialLinks">
+              <ul>
+                <li class="link">
+                  <a
+                    href="https://www.instagram.com/artoraaindia?igsh=MWtibmxmaTNwMGJneQ%3D%3D&utm_source=qr"
+                    target="_blank"
+                    ><img src="Icons/icons8-insta-64.png"
+                  /></a>
+                </li>
+                <li class="link">
+                  <a href="#" target="_blank"
+                    ><img src="Icons/icons8-facebook-64.png"
+                  /></a>
+                </li>
+                <li class="link">
+                  <a href="#" target="_blank"
+                    ><img src="Icons/icons8-youtube-64.png"
+                  /></a>
+                </li>
+                <li class="link">
+                  <a href="#" target="_blank"
+                    ><img src="Icons/icons8-twitterx-64.png"
+                  /></a>
+                </li>
+                <li class="link">
+                  <a href="#" target="_blank"
+                    ><img src="Icons/icons8-linked-in-64.png"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="line"></div>
+            <div class="sidebarContactInfo">
+              <div class="sidebar-phone">
+                <h2><a href="tel:+91-8369296752">+91 8369296752</a></h2>
+              </div>
+              <div class="email">
+                <h4>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&to=info@artoraindia.com&su=&body="
+                    target="”_blank”"
+                    >info@artoraindia.com</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
           <div class="sidebarLogo">
             <img src="Images/new logo white.png" />
           </div>
           <div class="sidebarSocialLinks">
             <ul>
               <li class="link">
-                <a href="https://www.instagram.com/artoraindia/" target="_blank"
+                <a
+                  href="https://www.instagram.com/artoraaindia?igsh=MWtibmxmaTNwMGJneQ%3D%3D&utm_source=qr"
+                  target="_blank"
                   ><img src="Icons/icons8-insta-64.png" /><span
                     >Instagram</span
                   ></a
@@ -129,14 +205,18 @@
     </nav>
 
     <div class="heroVideo">
-      <video autoplay muted loop class="video">
+      <video autoplay muted loop playsinline class="video" id="myVideo">
         <source src="Artora Website Video.mp4" type="video/mp4" />
         <source src="Artora Website Video.webm" type="video/webm" />
       </video>
     </div>
     <div class="heroContent">
       <div class="heroArtora">
-        <h1><span>Welcome to</span> ARTORAA</h1>
+        <h1>Redefining Artistry, One Step At A Time</h1>
+        <div class="mobile-heroArtora">
+          Redefining Artistry,<br />
+          One Step At A Time
+        </div>
         <h2 class="text-rotate">
           <span>Curating Masterpieces</span>
           <span>Global Art Advisory</span>
@@ -145,6 +225,11 @@
         </h2>
       </div>
       <h1 class="heroHeading">DISCOVER. INVEST. INSPIRE.</h1>
+      <div class="mobile-heroHeading">
+        DISCOVER. <br />
+        INVEST. <br />
+        INSPIRE.
+      </div>
     </div>
     <div class="whoWeAre">
       <div class="WWA-content">
@@ -155,40 +240,35 @@
           <div class="item">
             <h1>Art Curation</h1>
             <h4 class="item-des">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-              porro corporis deserunt quam maiores facere corrupti officiis,
-              voluptate eaque ullam, saepe non aut harum eos? Obcaecati labore
-              dicta aperiam quidem.
+              Exclusive exhibitions, immersive live art experiences, and
+              thoughtfully selected works that captivate and inspire. We bring
+              art to life, creating unforgettable moments.
             </h4>
             <img src="Images/artc.jpeg" />
           </div>
           <div class="item">
-            <h1>Art Curation</h1>
+            <h1>Art Advisory</h1>
             <h4 class="item-des">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-              porro corporis deserunt quam maiores facere corrupti officiis,
-              voluptate eaque ullam, saepe non aut harum eos? Obcaecati labore
-              dicta aperiam quidem.
+              Expert art advisory with a professional artist and interior
+              designer - tailored selections that elevate spaces.
             </h4>
             <img src="Images/artc.jpeg" />
           </div>
           <div class="item">
-            <h1>Art Curation</h1>
+            <h1>Artist Promotion</h1>
             <h4 class="item-des">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-              porro corporis deserunt quam maiores facere corrupti officiis,
-              voluptate eaque ullam, saepe non aut harum eos? Obcaecati labore
-              dicta aperiam quidem.
+              Global artist promotion : strategic exposure with tailored
+              marketing, connecting talent to collectors worldwide for maximum
+              impact.
             </h4>
             <img src="Images/artc.jpeg" />
           </div>
           <div class="item">
-            <h1>Art Curation</h1>
+            <h1>Artist Voice</h1>
             <h4 class="item-des">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-              porro corporis deserunt quam maiores facere corrupti officiis,
-              voluptate eaque ullam, saepe non aut harum eos? Obcaecati labore
-              dicta aperiam quidem.
+              Dive into podcasts featuring diverse artists sharing their stories
+              and inspirations - get to know the heart behind the art you are
+              buying.
             </h4>
             <img src="Images/artc.jpeg" />
           </div>
@@ -200,109 +280,110 @@
       <din class="WWO-content">
         <h2>WHAT WE OFFER</h2>
         <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          error, saepe totam inventore aspernatur magni explicabo vel esse
-          placeat animi quam officiis dolorum reprehenderit autem, nulla
-          cupiditate praesentium eaque excepturi!
+          We connect Art with the World and the World with Art. At Artoraa, we
+          bridge the gap between artists and collectors, making unique artworks
+          accessible to everyone. Our mission is to celebrate diverse artistic
+          expressions and create meaningful connections through art.
         </h1>
       </din>
     </div>
 
     <div class="ourEvents">
-      <div class="ourEvents-content">
-        <h2 class="OE">OUR EVENTS</h2>
-        <h5 class="OE-des">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at
-          obcaecati unde, eveniet cupiditate eos natus magni neque voluptas
-          vitae repellendus nesciunt tempora cum aliquid fuga quis dolore porro.
-          Mollitia?
-        </h5>
-      </div>
-      <div class="OE-slider">
-        <div class="OE-items">
-          <div class="OE-item">
-            <div class="OE-item-image">
-              <img src="Images/artc.jpeg" class="item-image" />
+      <div class="ourEvents-container">
+        <div class="ourEvents-content">
+          <h2 class="OE">OUR EVENTS</h2>
+          <h5 class="OE-des">
+            Unforgettable events blending art, culture, and creativity — where
+            every moment inspires.
+          </h5>
+        </div>
+        <div class="OE-slider">
+          <h1>Outstanding Events Coming Very Soon.. <br />Stay Tuned !!!</h1>
+          <!-- <div class="OE-items">
+            <div class="OE-item">
+              <div class="OE-item-image">
+                <img src="Images/artc.jpeg" class="item-image" />
+              </div>
+              <div class="OE-item-content">
+                <h3><b>23</b> September 2024</h3>
+                <h4 class="item-des">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt.
+                </h4>
+                <button>Read More</button>
+              </div>
+              <div class="price">
+                <h2 class="OE-item-price">$200</h2>
+              </div>
             </div>
-            <div class="OE-item-content">
-              <h3><b>23</b> September 2024</h3>
-              <h4 class="item-des">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                porro corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt. Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Sequi, porro
-                corporis deserunt.
-              </h4>
-              <button>Read More</button>
+            <div class="line"></div>
+            <div class="OE-item">
+              <div class="OE-item-image">
+                <img src="Images/artc.jpeg" class="item-image" />
+              </div>
+              <div class="OE-item-content">
+                <h3><b>03</b> August 2024</h3>
+                <h4 class="item-des">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                </h4>
+                <button>Read More</button>
+              </div>
+              <div class="price">
+                <h2 class="OE-item-price">$200</h2>
+              </div>
             </div>
-            <div class="price">
-              <h2 class="OE-item-price">$200</h2>
+            <div class="line"></div>
+            <div class="OE-item">
+              <div class="OE-item-image">
+                <img src="Images/artc.jpeg" class="item-image" />
+              </div>
+              <div class="OE-item-content">
+                <h3><b>07</b> May 2024</h3>
+                <h4 class="item-des">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                </h4>
+                <button>Read More</button>
+              </div>
+              <div class="price">
+                <h2 class="OE-item-price">$200</h2>
+              </div>
             </div>
-          </div>
-          <div class="line"></div>
-          <div class="OE-item">
-            <div class="OE-item-image">
-              <img src="Images/artc.jpeg" class="item-image" />
+            <div class="line"></div>
+            <div class="OE-item">
+              <div class="OE-item-image">
+                <img src="Images/artc.jpeg" class="item-image" />
+              </div>
+              <div class="OE-item-content">
+                <h3><b>03</b> August 2024</h3>
+                <h4 class="item-des">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, porro corporis deserunt. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Sequi, porro corporis deserunt.
+                </h4>
+                <button>Read More</button>
+              </div>
+              <div class="price">
+                <h2 class="OE-item-price">$200</h2>
+              </div>
             </div>
-            <div class="OE-item-content">
-              <h3><b>03</b> August 2024</h3>
-              <h4 class="item-des">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                porro corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt. Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Sequi, porro
-                corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt.
-              </h4>
-              <button>Read More</button>
-            </div>
-            <div class="price">
-              <h2 class="OE-item-price">$200</h2>
-            </div>
-          </div>
-          <div class="line"></div>
-          <div class="OE-item">
-            <div class="OE-item-image">
-              <img src="Images/artc.jpeg" class="item-image" />
-            </div>
-            <div class="OE-item-content">
-              <h3><b>07</b> May 2024</h3>
-              <h4 class="item-des">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                porro corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt. Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Sequi, porro
-                corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt.
-              </h4>
-              <button>Read More</button>
-            </div>
-            <div class="price">
-              <h2 class="OE-item-price">$200</h2>
-            </div>
-          </div>
-          <div class="line"></div>
-          <div class="OE-item">
-            <div class="OE-item-image">
-              <img src="Images/artc.jpeg" class="item-image" />
-            </div>
-            <div class="OE-item-content">
-              <h3><b>03</b> August 2024</h3>
-              <h4 class="item-des">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                porro corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt. Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Sequi, porro
-                corporis deserunt. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi, porro corporis deserunt.
-              </h4>
-              <button>Read More</button>
-            </div>
-            <div class="price">
-              <h2 class="OE-item-price">$200</h2>
-            </div>
-          </div>
-          <div class="line"></div>
+            <div class="line"></div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -506,10 +587,11 @@
         <div class="newsletter-info">
           <h1>Signup for exclusive updates!</h1>
           <h4>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-            esse maiores, quisquam ab eum quas eveniet repellat similique libero
-            sapiente minima impedit! Sunt voluptate illum mollitia repellat
-            iusto aliquam fugiat.
+            Join our community to stay informed about the latest artworks,
+            upcoming exhibitions, and special promotions. Be the first to
+            discover new artists, receive personalized recommendations, and gain
+            access to exclusive content. Don’t miss out on your chance to
+            connect with the vibrant world of art.
           </h4>
         </div>
       </div>
@@ -545,40 +627,41 @@
           </div>
         </div>
       </div>
-      
+
       <div class="line"></div>
       <div class="footer-social">
         <ul>
           <li class="link">
             <a href="https://www.instagram.com/artoraindia/" target="_blank"
-              ><img src="Icons/icons8-insta-64.png" /></a
-            >
+              ><img src="Icons/icons8-insta-64.png"
+            /></a>
           </li>
           <li class="link">
             <a href="#" target="_blank"
-              ><img src="Icons/icons8-facebook-64.png" /></a
-            >
+              ><img src="Icons/icons8-facebook-64.png"
+            /></a>
           </li>
           <li class="link">
             <a href="#" target="_blank"
-              ><img src="Icons/icons8-youtube-64.png" />
-          </li><li class="link">
-            <a href="#" target="_blank"
-              ><img src="Icons/icons8-twitterx-64.png" /></a
-            >
+              ><img src="Icons/icons8-youtube-64.png"
+            /></a>
           </li>
           <li class="link">
             <a href="#" target="_blank"
-              ><img src="Icons/icons8-linked-in-64.png" /></a
-            >
+              ><img src="Icons/icons8-twitterx-64.png"
+            /></a>
+          </li>
+          <li class="link">
+            <a href="#" target="_blank"
+              ><img src="Icons/icons8-linked-in-64.png"
+            /></a>
           </li>
         </ul>
       </div>
       <div class="lower-footer">
         <div class="copyright">
-          <span class="copy"
-                >&copy</span>2024. Artoraa India LLP. All Rights
-                Reserved.
+          <span class="copy">&copy</span>2024. Artoraa India LLP. All Rights
+          Reserved.
         </div>
       </div>
     </footer>

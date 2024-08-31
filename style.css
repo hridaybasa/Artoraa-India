@@ -8,6 +8,7 @@ html {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -33,15 +34,16 @@ nav {
   padding: 0;
   width: 100%;
   height: 120px;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   z-index: -2;
+  overflow: hidden; /* Hide overflow */
 }
 
 /* NavLogo */
 
 .navLogo img {
   width: 200px;
-  position: relative;
   object-fit: cover;
 }
 
@@ -61,7 +63,7 @@ nav {
 .link .nav-link::after {
   content: "";
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 0;
   bottom: 0;
   left: 5px;
@@ -88,7 +90,9 @@ nav {
   padding: 0;
   display: none;
   position: absolute;
-  background-color: #444;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 20px;
   top: 100%;
   left: 0;
   min-width: 150px;
@@ -108,6 +112,7 @@ nav {
 
 .subLinksPages li a:hover {
   background-color: #666;
+  border-radius: 20px;
 }
 
 .link:hover .subLinksPages {
@@ -134,16 +139,16 @@ nav {
   transition: all 0.3s ease;
 }
 
-.hamburger .line .top {
+.hamburger .line.top {
   width: 100%;
 }
 
-.hamburger .line .middle {
+.hamburger .line.middle {
   width: 70%;
   align-self: center;
 }
 
-.hamburger .line .bottom {
+.hamburger .line.bottom {
   width: 100%;
 }
 
@@ -156,8 +161,10 @@ nav {
   width: 250px;
   height: 100%;
   background-color: black;
+  opacity: 0.8;
   transition: all 0.5s ease;
   z-index: 10;
+  overflow-x: scroll;
 }
 
 .hamburger.open {
@@ -174,9 +181,10 @@ nav {
 
 .sidebarHamburger.open {
   position: relative;
-  width: 100%;
+  width: fit-content;
   height: 25px;
   top: 50px;
+  left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,7 +261,6 @@ nav {
 .sidebarSocialLinks .link img {
   width: 30px;
 }
-
 .sidebarSocialLinks .link:hover {
   cursor: pointer;
 }
@@ -277,7 +284,6 @@ nav {
   color: white;
   line-height: 0px;
 }
-
 .sidebarContactInfo h2 {
   font-weight: 500;
   letter-spacing: 1px;
@@ -286,7 +292,6 @@ nav {
   text-decoration: none;
   color: white;
 }
-
 .sidebarContactInfo h4 a {
   font-weight: 200;
   letter-spacing: 1px;
@@ -307,7 +312,6 @@ nav {
   z-index: -999;
   background-color: black;
 }
-
 .video {
   width: 100%;
   height: 100%;
@@ -327,32 +331,27 @@ nav {
   text-shadow: 0px 2px 10px black;
   opacity: 85%;
 }
-
 .heroHeading {
   font-size: 5rem;
   font-weight: 600;
+  letter-spacing: 1px;
 }
-
 .heroArtora {
   display: flex;
   justify-content: center;
-  text-align: center;
   align-content: center;
   flex-direction: column;
 }
 .heroArtora h1 {
-  font-size: 5rem;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-size: 3rem;
+  font-weight: 400;
   text-align: center;
   align-items: center;
 }
-.heroArtora h1 span {
-  font-weight: 200;
-}
 .heroArtora h2 {
+  margin-top: 40px;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .text-rotate {
@@ -365,7 +364,6 @@ nav {
   position: relative;
   margin-top: 0;
 }
-
 .text-rotate span {
   display: block;
   position: absolute;
@@ -373,7 +371,6 @@ nav {
   opacity: 0;
   animation: rotate 6s infinite;
 }
-
 .text-rotate span:nth-child(1) {
   animation-delay: 0s;
 }
@@ -413,7 +410,6 @@ nav {
 /* Who We Are */
 
 .whoWeAre {
-  position: relative;
   display: flex;
   width: 100%;
   height: 672px;
@@ -439,7 +435,7 @@ nav {
   width: 70%;
 }
 
-/*  */
+/* Who We Are Slider */
 
 .items {
   display: flex;
@@ -487,7 +483,7 @@ nav {
 .item img {
   height: 400px;
   object-fit: cover;
-  margin-top: 20px;
+  margin-top: 10px;
   transition: transform 0.2s ease, filter 0.2s ease;
   transform-origin: center center;
 }
@@ -534,17 +530,17 @@ nav {
   align-items: center;
   text-align: center;
 }
-
 .WWO-content h2 {
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
 }
-
 .WWO-content h1 {
-  margin-top: 5px;
-  font-size: 2.5rem;
+  margin-top: 20px;
+  font-size: 2rem;
   font-weight: 400;
+  text-align: center;
+  line-height: 35px;
 }
 
 /* Our Events */
@@ -553,25 +549,34 @@ nav {
   position: relative;
   display: flex;
   width: 100%;
-  height: 672px;
-  padding: 50px;
+  justify-content: center;
+  height: 472px; /* Change according to events */
+  padding: 100px 50px;
   background-color: black;
   color: white;
+}
+.ourEvents-container {
+  display: flex;
+  width: 85%;
+  gap: 50px;
 }
 
 .ourEvents-content {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 0 40px;
-  text-align: center;
+  padding: 0;
   width: 30%;
 }
 
 .OE {
+  display: flex;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 .OE-des {
@@ -580,8 +585,16 @@ nav {
   text-align: justify;
 }
 
+.OE-slider h1 {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  line-height: 40px;
+}
+
 .OE-slider {
   display: flex;
+  justify-content: center;
   width: 70%;
   overflow: scroll;
   padding-left: 40px;
@@ -639,6 +652,7 @@ nav {
   margin-top: 0;
   margin-bottom: 5px;
   font-weight: 200;
+  width: 400px;
 }
 .OE-item-content button {
   margin-top: 0;

@@ -16,38 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.classList.remove("open");
   });
 
-  // who we are slider
-
-  // const slider = document.querySelector(".items");
-  // let isDown = false;
-  // let startX;
-  // let scrollLeft;
-
-  // slider.addEventListener("mousedown", (e) => {
-  //   isDown = true;
-  //   slider.classList.add("active");
-  //   startX = e.pageX - slider.offsetLeft;
-  //   scrollLeft = slider.scrollLeft;
-  // });
-
-  // slider.addEventListener("mouseleave", () => {
-  //   isDown = false;
-  //   slider.classList.remove("active");
-  // });
-
-  // slider.addEventListener("mouseup", () => {
-  //   isDown = false;
-  //   slider.classList.remove("active");
-  // });
-
-  // slider.addEventListener("mousemove", (e) => {
-  //   if (!isDown) return;
-  //   e.preventDefault();
-  //   const x = e.pageX - slider.offsetLeft;
-  //   const walk = (x - startX) * 0.5; //scroll speed
-  //   slider.scrollLeft = scrollLeft - walk;
-  // });
-
   const slider = document.querySelector(".items");
   let isDown = false;
   let startX;
@@ -122,32 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-
-  // newsletter
-  // const scriptURL =
-  //   "https://script.google.com/macros/s/AKfycbwXL5oKO7-Yu8OwQL6XD3-tDqwxWZhZrWXXY7aslkVrGL25bCZP4xVkN05R3dEx3iEazA/exec"; // replace with your Google Apps Script URL
-  // const form = document.forms["newsletter-form"];
-  // const responseDiv = document.getElementById("response");
-
-  // form.addEventListener("submit", (e) => {
-  //   e.preventDefault();
-  //   responseDiv.innerHTML = "Submitting...";
-
-  //   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-  //     .then((response) => response.json())
-  //     .then((response) => {
-  //       if (response.result === "success") {
-  //         responseDiv.innerHTML = "Thank you for subscribing!";
-  //         form.reset();
-  //       } else {
-  //         responseDiv.innerHTML = "There was an error. Please try again.";
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       responseDiv.innerHTML = "There was an error. Please try again.";
-  //       console.error("Error!", error.message);
-  //     });
-  // });
 
   document
     .getElementById("newsletter-form")
