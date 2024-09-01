@@ -4,6 +4,12 @@
 .mobile-heroHeading {
   display: none;
 }
+.mobile-slider {
+  display: none;
+}
+.mobile-upper-footer {
+  display: none;
+}
 
 @media (max-width: 500px) and (min-width: 390px) {
   nav {
@@ -137,6 +143,125 @@
   .item img {
     height: 400px;
   }
+
+  .mobile-slider {
+    display: block;
+    margin-top: 20px;
+    animation: swing 2s ease infinite;
+  }
+  @keyframes swing {
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .WWO-content h2 {
+    font-size: 12px;
+  }
+  .WWO-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .ourEvents-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourEvents-content {
+    width: 80%;
+  }
+  .OE {
+    font-size: 1.8rem;
+  }
+  .OE-des {
+    font-size: 14px;
+    text-align: center;
+  }
+  .OE-slider {
+    width: 90%;
+    padding: 10px;
+  }
+  .OE-slider h1 {
+    font-size: 20px;
+  }
+
+  .newsletter-content {
+    flex-direction: column-reverse;
+  }
+  .newsletter-content {
+    gap: 40px;
+  }
+  .newsletter-content .newsletter-info h1 {
+    font-size: 1.7rem;
+  }
+  .newsletter-content .newsletter-info h4 {
+    font-size: 1rem;
+  }
+  .privacy-checkbox button {
+    padding: 0;
+  }
+
+  .upper-footer {
+    display: none;
+  }
+  .footer-logo img {
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+  .mobile-upper-footer {
+    display: block;
+    padding: 50px 20px;
+    width: 100%;
+    height: fit-content;
+  }
+  .mobile-upper-footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .mobile-upper-footer .footer-content .part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mobile-upper-footer .footer-content .part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mobile-upper-footer .footer-content .address h5 {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .mobile-upper-footer .footer-logo img {
+    width: 180px;
+  }
+  .mobile-upper-footer .footer-content {
+    gap: 30px;
+  }
+  .mobile-upper-footer .footer-content h3 {
+    font-size: 20px;
+  }
+  .mobile-upper-footer .footer-content h5 {
+    font-size: 16px;
+  }
+  .footer-social ul {
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+  }
+  .footer-social .link img {
+    width: 30px;
+  }
+  .copyright {
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 650px) and (min-width: 500px) {
@@ -238,6 +363,83 @@
   .item h4 {
     font-size: 14px;
   }
+
+  .mobile-slider {
+    display: block;
+    margin-top: 0px;
+    animation: swing 2s ease infinite;
+  }
+  @keyframes swing {
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .WWO-content h2 {
+    font-size: 13px;
+  }
+  .WWO-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .ourEvents-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourEvents-content {
+    width: 80%;
+  }
+  .OE {
+    font-size: 1.8rem;
+  }
+  .OE-des {
+    font-size: 14px;
+    text-align: center;
+  }
+  .OE-slider {
+    width: 90%;
+    padding: 10px;
+  }
+  .OE-slider h1 {
+    font-size: 24px;
+  }
+
+  .newsletter-content {
+    flex-direction: column-reverse;
+  }
+  .newsletter-content {
+    gap: 40px;
+  }
+  .newsletter-content .newsletter-info h1 {
+    font-size: 1.7rem;
+  }
+  .newsletter-content .newsletter-info h4 {
+    font-size: 1rem;
+  }
+  .privacy-checkbox button {
+    padding: 0;
+  }
+
+  .upper-footer {
+    flex-direction: column;
+    justify-content: left;
+    padding: 30px;
+  }
+  .footer-logo img {
+    width: 180px;
+  }
+  .footer-content {
+    gap: 30px;
+  }
+  .footer-content h3 {
+    font-size: 16px;
+  }
+  .footer-content h5 {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 650px) {
@@ -330,6 +532,81 @@
   .WWA-slider {
     width: 100%;
   }
+  .mobile-slider {
+    display: block;
+    margin-top: 0px;
+    animation: swing 2s ease infinite;
+  }
+  @keyframes swing {
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .WWO-content h2 {
+    font-size: 14px;
+  }
+  .WWO-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .ourEvents-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourEvents-content {
+    width: 80%;
+  }
+  .OE {
+    font-size: 1.8rem;
+  }
+  .OE-des {
+    font-size: 14px;
+    text-align: center;
+  }
+  .OE-slider {
+    width: 90%;
+    padding: 10px;
+  }
+  .OE-slider h1 {
+    font-size: 26px;
+  }
+
+  .newsletter-content {
+    flex-direction: column-reverse;
+  }
+  .newsletter-content {
+    gap: 40px;
+  }
+  .newsletter-content .newsletter-info h1 {
+    font-size: 1.8rem;
+  }
+  .newsletter-content .newsletter-info h4 {
+    font-size: 1rem;
+  }
+  .privacy-checkbox button {
+    padding: 0;
+  }
+
+  .upper-footer {
+    flex-direction: column;
+    justify-content: left;
+  }
+  .footer-logo img {
+    width: 200px;
+  }
+  .footer-content {
+    gap: 60px;
+  }
+  .footer-content h3 {
+    font-size: 17px;
+  }
+  .footer-content h5 {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 860px) and (min-width: 769px) {
@@ -370,6 +647,46 @@
   .heroArtora h2 {
     font-size: 1.5rem;
   }
+
+  .WWO-content h2 {
+    font-size: 15px;
+  }
+  .WWO-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .OE {
+    font-size: 1.4rem;
+  }
+  .OE-des {
+    font-size: 14px;
+  }
+  .OE-slider h1 {
+    font-size: 26px;
+  }
+
+  .newsletter-content {
+    gap: 40px;
+  }
+  .newsletter-content .newsletter-info h1 {
+    font-size: 1.8rem;
+  }
+  .newsletter-content .newsletter-info h4 {
+    font-size: 0.8rem;
+  }
+
+  .footer-logo img {
+    width: 200px;
+  }
+  .footer-content {
+    gap: 20px;
+  }
+  .footer-content h3 {
+    font-size: 17px;
+  }
+  .footer-content h5 {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 978px) and (min-width: 861px) {
@@ -407,6 +724,39 @@
   .heroArtora h2 {
     font-size: 1.8rem;
   }
+
+  .OE {
+    font-size: 1.7rem;
+  }
+  .OE-des {
+    font-size: 15px;
+  }
+  .OE-slider h1 {
+    font-size: 30px;
+  }
+
+  .newsletter-content {
+    gap: 45px;
+  }
+  .newsletter-content .newsletter-info h1 {
+    font-size: 2.4rem;
+  }
+  .newsletter-content .newsletter-info h4 {
+    font-size: 0.8rem;
+  }
+
+  .footer-logo img {
+    width: 250px;
+  }
+  .footer-content {
+    gap: 50px;
+  }
+  .footer-content h3 {
+    font-size: 17px;
+  }
+  .footer-content h5 {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1058px) and (min-width: 978px) {
@@ -436,6 +786,14 @@
   .OE-des {
     font-size: 16px;
   }
+
+  .footer-logo img {
+    width: 260px;
+  }
+
+  .footer-content {
+    gap: 70px;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 1058px) {
@@ -464,6 +822,10 @@
   }
   .OE-des {
     font-size: 18px;
+  }
+
+  .footer-content {
+    gap: 80px;
   }
 }
 
