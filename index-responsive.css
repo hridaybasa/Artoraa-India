@@ -11,7 +11,7 @@
   display: none;
 }
 
-@media (max-width: 500px) and (min-width: 390px) {
+@media (max-width: 500px) and (min-width: 360px) {
   nav {
     padding: 0px 30px;
     height: 80px;
@@ -64,12 +64,30 @@
   .sidebarContent .navLinks .line {
     display: block;
   }
+  .sidebarContent .navLinks .link .nav-link::after {
+    display: none;
+  }
   .sidebarContent .navLinks .sidebarContactInfo {
     display: block;
     padding-top: 20px;
   }
   .sidebarContent .navLinks .sidebarContactInfo .email {
     padding-top: 5px;
+  }
+  .subLinksPages {
+    position: relative;
+    display: block;
+    border-radius: 0px;
+    background-color: transparent;
+  }
+  .subLinksPages li {
+    line-height: 10px;
+  }
+  .subLinksPages li a {
+    font-size: 14px;
+  }
+  .subLinksPages li a:hover {
+    background-color: transparent;
   }
 
   /* Hero */
@@ -294,6 +312,9 @@
     display: block;
     flex-direction: column;
   }
+  .sidebarContent .navLinks .link .nav-link::after {
+    display: none;
+  }
   .sidebarContent .navLinks ul {
     flex-direction: column;
   }
@@ -321,6 +342,21 @@
   }
   .sidebarContent .navLinks .sidebarContactInfo .email {
     padding-top: 5px;
+  }
+  .subLinksPages {
+    position: relative;
+    display: block;
+    border-radius: 0px;
+    background-color: transparent;
+  }
+  .subLinksPages li {
+    line-height: 10px;
+  }
+  .subLinksPages li a {
+    font-size: 14px;
+  }
+  .subLinksPages li a:hover {
+    background-color: transparent;
   }
 
   /* Hero */
@@ -493,12 +529,30 @@
   .sidebarContent .navLinks .line {
     display: block;
   }
+  .sidebarContent .navLinks .link .nav-link::after {
+    display: none;
+  }
   .sidebarContent .navLinks .sidebarContactInfo {
     display: block;
     padding-top: 20px;
   }
   .sidebarContent .navLinks .sidebarContactInfo .email {
     padding-top: 5px;
+  }
+  .subLinksPages {
+    position: relative;
+    display: block;
+    border-radius: 0px;
+    background-color: transparent;
+  }
+  .subLinksPages li {
+    line-height: 10px;
+  }
+  .subLinksPages li a {
+    font-size: 14px;
+  }
+  .subLinksPages li a:hover {
+    background-color: transparent;
   }
 
   /* Hero */
