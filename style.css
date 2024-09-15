@@ -691,6 +691,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 80px;
+  padding-top: 100px;
 }
 .newsletter-info {
   display: flex;
@@ -973,4 +974,31 @@ footer .line {
 .copyright span {
   padding: 0px;
   margin: 0;
+}
+
+/* About Us Page */
+
+.about-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  color: white;
+  text-align: justify;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+}
+
+.about-content h4 {
+  font-size: 1.2rem;
+  line-height: 25px;
+  font-weight: 300;
 }

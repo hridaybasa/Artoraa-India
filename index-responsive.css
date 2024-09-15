@@ -151,6 +151,7 @@
   }
   .item {
     height: 500px;
+    width: 300px;
   }
   .item h1 {
     font-size: 2.5rem;
@@ -225,7 +226,7 @@
     display: none;
   }
   .footer-logo img {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 10px;
   }
   .mobile-upper-footer {
