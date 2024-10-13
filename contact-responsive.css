@@ -146,6 +146,73 @@ html {
     font-size: 14px !important;
     padding-bottom: 40px !important;
   }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+    gap: 10px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 2.2rem !important;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0px;
+  }
+  .contact-content .contact-details .newsletter-content {
+    flex-direction: column !important;
+    padding: 30 0;
+    gap: 50px;
+  }
+  .contact-details .contact-details-news .newsletter-content .newsletter-info {
+    gap: 10px;
+    margin: 0;
+    flex-direction: row;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0px;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    /* margin-left: -10px; */
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    /* margin-left: 30px; */
+    margin-top: 0;
+    text-wrap: nowrap;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    /* margin-left: 0px; */
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 650px) and (min-width: 500px) {
@@ -243,6 +310,73 @@ html {
   .footer-content h5 {
     font-size: 12px !important;
   }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+    gap: 10px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 2.9rem !important;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0px;
+  }
+  .contact-content .contact-details .newsletter-content {
+    flex-direction: column !important;
+    padding: 30 0;
+    gap: 50px;
+  }
+  .contact-details .contact-details-news .newsletter-content .newsletter-info {
+    gap: 10px;
+    margin: 0;
+    flex-direction: row;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0px;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    /* margin-left: -10px; */
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    /* margin-left: 30px; */
+    margin-top: 0;
+    text-wrap: nowrap;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    /* margin-left: 0px; */
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 650px) {
@@ -339,6 +473,65 @@ html {
   .footer-content h5 {
     font-size: 13px !important;
   }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+    gap: 10px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 5rem !important;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0px;
+  }
+  .contact-details .contact-details-news .newsletter-content .newsletter-info {
+    gap: 20px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    /* margin-left: -10px; */
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    /* margin-left: 30px; */
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    /* margin-left: 0px; */
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 860px) and (min-width: 769px) {
@@ -376,6 +569,60 @@ html {
   }
   .footer-content h5 {
     font-size: 13px !important;
+  }
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+    gap: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 6.3rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    /* margin-left: -10px; */
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    /* margin-left: 30px; */
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    /* margin-left: 0px; */
+    margin-top: 10px;
   }
 }
 
@@ -415,6 +662,60 @@ html {
   .footer-content h5 {
     font-size: 13px !important;
   }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 7rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    margin-left: -20px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    margin-left: 90px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1058px) and (min-width: 978px) {
@@ -435,6 +736,60 @@ html {
   .footer-content {
     gap: 70px !important;
   }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 7.7rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    margin-left: -30px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    margin-left: -5px;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 1058px) {
@@ -452,6 +807,60 @@ html {
   .footer-content {
     gap: 80px !important;
   }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 8rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    margin-left: -30px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    margin-left: -5px;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1480px) and (min-width: 1201px) {
@@ -464,6 +873,60 @@ html {
   }
   .sidebarHamburger.open {
     left: 190px;
+  }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 9rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    margin-left: -50px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    margin-left: 160px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 0;
   }
 }
 
