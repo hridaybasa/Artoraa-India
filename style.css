@@ -1010,15 +1010,16 @@ footer .line {
 .contact-content {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 30px;
   justify-content: center;
   width: 100%;
-  background-color: #666;
 }
 .contact-content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  padding: 0 40px;
+  /* font-weight: 200; */
+  color: white;
 }
 .contact-content .contact-details {
   padding: 0;
