@@ -474,9 +474,6 @@ html {
   .sidebarHamburger.open {
     left: 185px;
   }
-}
-
-@media (min-width: 1481px) {
   /* Nav */
 
   .navLinks ul {
@@ -489,13 +486,64 @@ html {
   .sidebarHamburger.open {
     left: 190px;
   }
-}
-
-@media (min-width: 1481px) {
   .sidebarContent .navLinks {
     display: none;
   }
   .sidebarHamburger.open {
     left: 185px;
+  }
+
+  /* Newsletter */
+
+  .contact-details .contact-details-news .newsletter-content {
+    width: 90% !important;
+    justify-content: space-evenly !important;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    h1 {
+    font-size: 9rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    span {
+    margin: 0;
+    padding: 0px;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .lets {
+    display: flex;
+    width: 100%;
+    margin-left: -50px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .get-in {
+    display: flex;
+    width: 100%;
+    margin-left: 160px;
+    margin-top: 0;
+  }
+  .contact-details
+    .contact-details-news
+    .newsletter-content
+    .newsletter-info
+    .touch {
+    display: flex;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 0;
   }
 }

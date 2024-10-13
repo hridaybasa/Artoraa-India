@@ -991,6 +991,8 @@ footer .line {
   width: 70%;
   color: white;
   text-align: justify;
+  background: rgba(102, 102, 102, 0.3);
+  padding: 0 15px;
 }
 
 .about-content h1 {
@@ -1001,4 +1003,30 @@ footer .line {
   font-size: 1.2rem;
   line-height: 25px;
   font-weight: 300;
+}
+
+/* Contact Page */
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  justify-content: center;
+  width: 100%;
+  background-color: #666;
+}
+.contact-content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.contact-content .contact-details {
+  padding: 0;
+  width: 100%;
+}
+.contact-content .contact-details .newsletter {
+  padding: 0;
+}
+.contact-content .contact-details .newsletter-content {
+  background-color: #444;
 }
