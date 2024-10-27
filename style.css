@@ -1028,5 +1028,60 @@ footer .line {
 .contact-content .contact-details .newsletter {
   padding: 0;
 }
-.contact-content .contact-details .newsletter-content {
+/* .contact-content .contact-details .newsletter-content {
+} */
+
+/* Our Team Page */
+
+.intro {
+  display: flex;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  font-size: 1.5rem;
+}
+
+.ourTeam {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  gap: 40px;
+}
+
+.ourTeam .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  background-color: ;
+  margin-top: -100px;
+  color: white;
+  overflow: hidden;
+}
+
+.ourTeam .item .image {
+  padding-top: 20px;
+}
+.ourTeam .item.hriday .image img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.ourTeam .item .name {
+  font-size: 1.8rem;
+}
+.ourTeam .item .title {
+  margin-top: 10px;
+}
+
+.ourTeam .item.hriday {
+  margin-top: 300px;
+}
+.ourTeam .item.hrithik {
+  margin-top: 300px;
 }
