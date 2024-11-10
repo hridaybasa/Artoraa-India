@@ -6,6 +6,9 @@ html {
 .mobile-upper-footer {
   display: none;
 }
+.ourTeam-mobile {
+  display: none;
+}
 
 @media (max-width: 500px) and (min-width: 360px) {
   .navbar {
@@ -146,6 +149,43 @@ html {
     font-size: 14px !important;
     padding-bottom: 40px !important;
   }
+
+  footer {
+    padding-top: 0px !important;
+    margin-top: -100px !important;
+  }
+
+  .ourTeam {
+    display: none !important;
+  }
+  .ourTeam-mobile {
+    display: block !important;
+  }
+  .ourTeam-mobile .part1 {
+    gap: 0px !important;
+  }
+  .ourTeam-mobile .part2 {
+    gap: 0px !important;
+  }
+
+  .intro h1 {
+    font-size: 2.4rem !important;
+  }
+  .intro h3 {
+    font-size: 1.1rem !important;
+    padding: 0 20px !important;
+  }
+  .ourTeam-mobile .item .name {
+    font-size: 1.5rem !important;
+    text-wrap: nowrap;
+  }
+  .ourTeam-mobile .item.hriday .image img {
+    width: 170px;
+  }
+  .ourTeam-mobile .item {
+    margin: 10px !important;
+    margin-top: 60px !important;
+  }
 }
 
 @media (max-width: 650px) and (min-width: 500px) {
@@ -243,6 +283,42 @@ html {
   .footer-content h5 {
     font-size: 12px !important;
   }
+  footer {
+    padding-top: 0px !important;
+    margin-top: -100px !important;
+  }
+
+  .ourTeam {
+    display: none !important;
+  }
+  .ourTeam-mobile {
+    display: block !important;
+  }
+  .ourTeam-mobile .part1 {
+    gap: 40px !important;
+  }
+  .ourTeam-mobile .part2 {
+    gap: 40px !important;
+  }
+
+  .intro h1 {
+    font-size: 2.4rem !important;
+  }
+  .intro h3 {
+    font-size: 1.2rem !important;
+    padding: 0 60px !important;
+  }
+  .ourTeam-mobile .item .name {
+    font-size: 1.5rem !important;
+    text-wrap: nowrap;
+  }
+  .ourTeam-mobile .item.hriday .image img {
+    width: 170px;
+  }
+  .ourTeam-mobile .item {
+    margin: 10px !important;
+    margin-top: 60px !important;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 650px) {
@@ -339,6 +415,36 @@ html {
   .footer-content h5 {
     font-size: 13px !important;
   }
+  footer {
+    padding-top: 0px !important;
+    margin-top: -100px !important;
+  }
+
+  .ourTeam {
+    display: none !important;
+  }
+  .ourTeam-mobile {
+    display: block !important;
+  }
+
+  .intro h1 {
+    font-size: 2.6rem !important;
+  }
+  .intro h3 {
+    font-size: 1.3rem !important;
+    padding: 0 80px !important;
+  }
+  .ourTeam-mobile .item .name {
+    font-size: 1.5rem !important;
+    text-wrap: nowrap;
+  }
+  .ourTeam-mobile .item.hriday .image img {
+    width: 170px;
+  }
+  .ourTeam-mobile .item {
+    margin: 10px !important;
+    margin-top: 60px !important;
+  }
 }
 
 @media (max-width: 860px) and (min-width: 769px) {
@@ -376,6 +482,32 @@ html {
   }
   .footer-content h5 {
     font-size: 13px !important;
+  }
+
+  footer {
+    padding-top: 0px !important;
+    margin-top: -100px !important;
+  }
+
+  .ourTeam {
+    gap: 0px !important;
+  }
+  .intro h1 {
+    font-size: 2.6rem !important;
+  }
+  .intro h3 {
+    font-size: 1.1rem !important;
+  }
+  .ourTeam .item .name {
+    font-size: 1.5rem !important;
+    text-wrap: nowrap;
+  }
+  .ourTeam .item.hriday .image img {
+    width: 170px;
+  }
+  .ourTeam .item {
+    margin: 10px !important;
+    margin-top: 60px !important;
   }
 }
 
@@ -415,6 +547,27 @@ html {
   .footer-content h5 {
     font-size: 13px !important;
   }
+  footer {
+    padding-top: 0px !important;
+    margin-top: -80px !important;
+  }
+
+  .ourTeam {
+    gap: 10px !important;
+  }
+  .intro h1 {
+    font-size: 2.7rem !important;
+  }
+  .intro h3 {
+    font-size: 1.2rem !important;
+  }
+  .ourTeam .item .name {
+    font-size: 1.6rem !important;
+    text-wrap: nowrap;
+  }
+  .ourTeam .item.hriday .image img {
+    width: 180px;
+  }
 }
 
 @media (max-width: 1058px) and (min-width: 978px) {
@@ -435,6 +588,26 @@ html {
   .footer-content {
     gap: 70px !important;
   }
+  footer {
+    padding-top: 0px !important;
+    margin-top: -80px !important;
+  }
+
+  .ourTeam {
+    gap: 20px !important;
+  }
+  .intro h1 {
+    font-size: 2.8rem !important;
+  }
+  .intro h3 {
+    font-size: 1.3rem !important;
+  }
+  .ourTeam .item .name {
+    font-size: 1.7rem !important;
+  }
+  .ourTeam .item.hriday .image img {
+    width: 190px;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 1058px) {
@@ -452,6 +625,14 @@ html {
   .footer-content {
     gap: 80px !important;
   }
+  footer {
+    padding-top: 0px !important;
+    margin-top: -80px !important;
+  }
+
+  .ourTeam {
+    gap: 30px !important;
+  }
 }
 
 @media (max-width: 1480px) and (min-width: 1201px) {
@@ -465,6 +646,11 @@ html {
   .sidebarHamburger.open {
     left: 190px;
   }
+
+  footer {
+    padding-top: 0px !important;
+    margin-top: -80px !important;
+  }
 }
 
 @media (min-width: 1481px) {
@@ -473,6 +659,10 @@ html {
   }
   .sidebarHamburger.open {
     left: 185px;
+  }
+  footer {
+    padding-top: 0px !important;
+    margin-top: -80px !important;
   }
 }
 

@@ -705,7 +705,7 @@ nav {
   margin-bottom: 0;
 }
 .newsletter-content .newsletter-info h4 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 20px;
   text-align: center;
@@ -1035,12 +1035,22 @@ footer .line {
 
 .intro {
   display: flex;
+  flex-direction: column;
   width: 100%;
   color: white;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 60px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+}
+.intro h3 {
   font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+  padding: 0 100px;
 }
 
 .ourTeam {
@@ -1049,7 +1059,6 @@ footer .line {
   height: fit-content;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
   gap: 40px;
 }
 
@@ -1058,7 +1067,6 @@ footer .line {
   flex-direction: column;
   align-items: center;
   width: 200px;
-  background-color: ;
   margin-top: -100px;
   color: white;
   overflow: hidden;
@@ -1084,4 +1092,70 @@ footer .line {
 }
 .ourTeam .item.hrithik {
   margin-top: 300px;
+}
+
+/* Our team mobile */
+
+.ourTeam-mobile .part1 {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.ourTeam-mobile .part2 {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: -100px;
+}
+
+.ourTeam-mobile .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-top: -100px;
+  color: white;
+  overflow: hidden;
+}
+
+.ourTeam-mobile .item .image {
+  padding-top: 20px;
+}
+.ourTeam-mobile .item.hriday .image img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.ourTeam-mobile .item .name {
+  font-size: 1.8rem;
+}
+.ourTeam-mobile .item .title {
+  margin-top: 10px;
+}
+
+.ourTeam-mobile .item.hriday {
+  margin-top: 300px;
+}
+.ourTeam-mobile .item.hrithik {
+  margin-top: 300px;
+}
+
+/* FAQs */
+
+.faq-content h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.faq-content h1 {
+  color: white;
 }
